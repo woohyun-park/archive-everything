@@ -1,0 +1,9 @@
+:root {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 360px;
+  margin: 16px;
+}
