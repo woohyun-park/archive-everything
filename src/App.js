@@ -1,12 +1,12 @@
-import "./App.css";
+import "./App.scss";
 import Post from "./Post";
 
 function App() {
   return (
-    <>
-      <div>archive everything</div>
+    <div className="app">
+      <h1 className="app__title">Feed</h1>
       <Post />
-    </>
+    </div>
   );
 }
 
