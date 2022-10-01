@@ -6,6 +6,8 @@ function App() {
     <div className="app">
       <h1 className="app__title">Feed</h1>
       <Post />
+      <Post />
+      <Post />
     </div>
   );
 }
