@@ -1,11 +1,11 @@
 :root {
   --margin: 16px;
-  --margin-post: 24px;
+  --margin-carousel: 24px;
   --gutter: 16px;
   --color-text-1: #000000;
   --color-text-2: #4a4a4a;
   --color-text-3: #818181;
-  --color-textPost-1: #ffffff;
+  --color-textCarousel-1: #ffffff;
   --color-bg-1: #ffffff;
   --color-bg-2: #d9d9d9;
   --color-bg-outside: #2c2c2c;
@@ -19,6 +19,12 @@ body {
   justify-content: center;
   background-color: var(--color-bg-outside);
   margin: 0;
+
+  // 드래그 금지
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #root {
