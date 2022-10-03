@@ -1,4 +1,4 @@
-import "./App.scss";
+import styles from "./App.scss";
 import Post from "./Post";
 
 function App() {

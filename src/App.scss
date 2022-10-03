@@ -37,3 +37,8 @@ body {
   flex-direction: column;
   margin: var(--margin);
 }
+
+.app__title {
+  margin: var(--margin) 0;
+  font-weight: bold;
+}

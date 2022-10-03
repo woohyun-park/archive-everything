@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import "./Post.scss";
+import styles from "./Post.module.scss";
 import { MdMoreHoriz } from "react-icons/md";
 
 const tempPost = {
@@ -12,16 +12,20 @@ const tempPost = {
 function Post() {
   return (
     <>
-      <div className="post">
-        <div className="post__firstCont">
-          <div className="post__profileCont">
-            <img className="post__profileImg" src={tempPost.profileImg}></img>
-            <div className="post__profile">
-              <div className="post__profileTxt">{tempPost.profile}</div>
-              <div className="post__date">{tempPost.date}</div>
+      <div className={styles.post}>
+        <div className={styles.post__firstCont}>
+          <div className={styles.post__profileCont}>
+            <img
+              className={styles.post__profileImg}
+              src={tempPost.profileImg}
+              alt="post__profileImg"
+            ></img>
+            <div className={styles.post__profile}>
+              <div className={styles.post__profileTxt}>{tempPost.profile}</div>
+              <div className={styles.post__date}>{tempPost.date}</div>
             </div>
           </div>
-          <MdMoreHoriz className="post__more" size={"24px"} />
+          <MdMoreHoriz className={styles.post__more} size={"24px"} />
         </div>
         <Carousel />
       </div>
