@@ -1,0 +1,25 @@
+.post__firstCont {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__profileCont {
+  display: flex;
+}
+
+.post__profileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  margin-right: 8px;
+}
+
+.post__profileTxt {
+  font-weight: bold;
+}
+
+.post__date {
+  font-size: 8px;
+}

@@ -1,13 +1,13 @@
 import "./App.scss";
-import Carousel from "./Carousel";
+import Post from "./Post";
 
 function App() {
   return (
     <div className="app">
       <h1 className="app__title">Feed</h1>
-      <Carousel />
-      <Carousel />
-      <Carousel />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 }
