@@ -8,7 +8,7 @@ function Carousel() {
           <div className={styles.carousel__bgCont}>
             <img
               className={styles.carousel__bg}
-              src="https://res.cloudinary.com/dl5qaj6le/image/upload/v1664891277/archive/static/carousel_temp.png"
+              src="https://res.cloudinary.com/dl5qaj6le/image/upload/v1664891643/archive/static/carousel_temp.png"
               alt="carousel__bg"
             />
             <div className={styles.carousel__bgOverlay}></div>
