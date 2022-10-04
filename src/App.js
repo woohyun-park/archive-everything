@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel";
 function App() {
   return (
     <div className="app">
-      <h1 className="app__title">Feed</h1>
+      <h1 className="title">Feed</h1>
       <Post />
       <Post />
       <Post />
