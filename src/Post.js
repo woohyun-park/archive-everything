@@ -5,7 +5,7 @@ import { MdMoreHoriz } from "react-icons/md";
 const tempPost = {
   profile: "iamdooddi",
   profileImg:
-    "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/25f6cc38-a49f-45cf-a3a6-578cb0408203/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221003%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221003T034452Z&X-Amz-Expires=86400&X-Amz-Signature=05d1e8e6fa38af6f9e9da9ec32b1c6feb94187c636770f27ec9baa8789f34745&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject",
+    "https://res.cloudinary.com/dl5qaj6le/image/upload/v1664891276/archive/static/profile_temp.png",
   date: "6시간 전",
 };
 
