@@ -1,3 +1,7 @@
+svg:hover {
+  cursor: pointer;
+}
+
 .firstCont {
   margin: var(--margin-small) 0;
   display: flex;
@@ -15,10 +19,16 @@
   height: 32px;
   border-radius: 32px;
   margin-right: var(--margin-small);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .profileTxt {
   font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .date {
