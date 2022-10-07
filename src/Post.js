@@ -21,6 +21,9 @@ const tempPost = {
 };
 
 function Post() {
+  const onProfileClick = () => {
+    console.log("onProfileClick");
+  };
   return (
     <>
       <div className={styles.post}>
@@ -30,9 +33,12 @@ function Post() {
               className={styles.profileImg}
               src={tempPost.profileImg}
               alt="profileImg"
+              onClick={onProfileClick}
             ></img>
             <div className={styles.profile}>
-              <div className={styles.profileTxt}>{tempPost.profile}</div>
+              <div className={styles.profileTxt} onClick={onProfileClick}>
+                {tempPost.profile}
+              </div>
               <div className={styles.date}>{tempPost.date}</div>
             </div>
           </div>
