@@ -24,6 +24,9 @@ function Post() {
   const onProfileClick = () => {
     console.log("onProfileClick");
   };
+  const onPostClick = () => {
+    console.log("onPostClick");
+  };
   return (
     <>
       <div className={styles.post}>
