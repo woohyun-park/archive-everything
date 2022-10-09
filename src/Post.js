@@ -27,6 +27,9 @@ function Post() {
   const onPostClick = () => {
     console.log("onPostClick");
   };
+  const onMoreClick = () => {
+    console.log("onMoreClick");
+  };
   return (
     <>
       <div className={styles.post}>
