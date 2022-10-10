@@ -30,6 +30,9 @@ function Post() {
   const onMoreClick = () => {
     console.log("onMoreClick");
   };
+  const onLikeClick = () => {
+    console.log("onLikeClick");
+  };
   return (
     <>
       <div className={styles.post}>
