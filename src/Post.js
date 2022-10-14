@@ -33,6 +33,18 @@ function Post() {
   const onLikeClick = () => {
     console.log("onLikeClick");
   };
+  const onCommentClikc = () => {
+    console.log("onCommentClick");
+  };
+  const onSaveClick = () => {
+    console.log("onSaveClick");
+  };
+  const onLikeTextClick = () => {
+    console.log("onLikeTextClick");
+  };
+  const onCommentTextClick = () => {
+    console.log("onLikeTextClick");
+  };
   return (
     <>
       <div className={styles.post}>
