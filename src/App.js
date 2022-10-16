@@ -1,15 +1,15 @@
-import styles from "./App.scss";
-import Post from "./Post";
-
-import Carousel from "react-bootstrap/Carousel";
+import "./App.scss";
+import Home from "./Routes/Home";
+import Profile from "./Routes/Profile";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <h1 className="title">Feed</h1>
-      <Post />
-      <Post />
-      <Post />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </div>
   );
 }

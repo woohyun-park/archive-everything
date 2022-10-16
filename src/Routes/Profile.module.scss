@@ -1,0 +1,43 @@
+.profile {
+  margin-bottom: var(--margin-small);
+}
+
+.profileCont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.countCont {
+  display: flex;
+  font-size: var(--size-font-mid);
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: var(--margin);
+}
+
+.introduction {
+  font-size: var(--size-font-mid);
+  min-height: 72px;
+}
+
+.profileImg {
+  margin-top: 24px;
+  width: 72px;
+  height: 72px;
+}
+
+.buttonCont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px var(--color-text-3) solid;
+}
+
+.button--selected {
+  border-bottom: 2px var(--color-text-1) solid;
+}
