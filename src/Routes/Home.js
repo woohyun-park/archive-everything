@@ -3,7 +3,7 @@ import Post from "../Post";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <h1 className={styles.title}>Feed</h1>
       <Post />
       <Post />

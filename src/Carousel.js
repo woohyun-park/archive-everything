@@ -42,13 +42,19 @@ function Carousel({ type = "normal" }) {
         </div>
         <div className={styles.cont}>
           <div className={styles.titleCont}>
-            <div className={styles.title}>{tempCarousel.title}</div>
+            <div className={cx({ title: true, "title--thumbnail": true })}>
+              {tempCarousel.title}
+            </div>
           </div>
-          <div className={styles.tagCont}>
+          <div className={cx({ tagCont: true, "tagCont--thumbnail": true })}>
             <div className={styles.mainTag}>#{tempCarousel.mainTag}</div>
             <div className={styles.subTagCont}>
-              <div className={styles.subTag}>#{tempCarousel.subTags[0]}</div>
-              <div className={styles.subTag}>#{tempCarousel.subTags[1]}</div>
+              <div className={cx({ subTag: true, "subTag--thumbnail": true })}>
+                #{tempCarousel.subTags[0]}
+              </div>
+              <div className={cx({ subTag: true, "subTag--thumbnail": true })}>
+                #{tempCarousel.subTags[1]}
+              </div>
             </div>
           </div>
         </div>

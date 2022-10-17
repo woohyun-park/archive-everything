@@ -20,7 +20,7 @@ const tempPost = {
   commentCount: 12,
 };
 
-function Post({ type = "normal" }) {
+function Post({ type = "normal", data = tempPost }) {
   const onProfileClick = () => {
     console.log("onProfileClick");
   };
@@ -52,15 +52,15 @@ function Post({ type = "normal" }) {
           <div className={styles.profileCont}>
             <img
               className={styles.profileImg}
-              src={tempPost.profileImg}
+              src={data.profileImg}
               alt="profileImg"
               onClick={onProfileClick}
             ></img>
             <div className={styles.profile}>
               <div className={styles.profileTxt} onClick={onProfileClick}>
-                {tempPost.profile}
+                {data.profile}
               </div>
-              <div className={styles.date}>{tempPost.date}</div>
+              <div className={styles.date}>{data.date}</div>
             </div>
           </div>
           <MdMoreHoriz className={styles.more} size={"24px"} />
@@ -70,18 +70,16 @@ function Post({ type = "normal" }) {
           <div className={styles.secondContLeft}>
             <div className={styles.likeCont}>
               <BsHeart className={styles.like} size="24px" />
-              <div className={styles.likeTxt}>좋아요 {tempPost.likeCount}</div>
+              <div className={styles.likeTxt}>좋아요 {data.likeCount}</div>
             </div>
             <div className={styles.commentCont}>
               <BsChat className={styles.comment} size="24px" />
-              <div className={styles.commentTxt}>
-                댓글 {tempPost.commentCount}
-              </div>
+              <div className={styles.commentTxt}>댓글 {data.commentCount}</div>
             </div>
           </div>
           <BsBookmark className={styles.save} size="24px" />
         </div>
-        <div className={styles.likeWho}>{tempPost.likeDesc}</div>
+        <div className={styles.likeWho}>{data.likeDesc}</div>
       </div>
     </>
   ) : type === "thumbnail" ? (

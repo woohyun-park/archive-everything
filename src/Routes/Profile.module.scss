@@ -5,6 +5,11 @@
 .profileCont {
   display: flex;
   justify-content: space-between;
+  width: auto;
+  margin: var(--margin);
+}
+
+.profileTxtCont {
   width: 100%;
 }
 
@@ -16,15 +21,22 @@
   margin-bottom: var(--margin);
 }
 
+.countTxt {
+  color: var(--color-text-3);
+}
+
 .introduction {
   font-size: var(--size-font-mid);
   min-height: 72px;
+  margin: var(--margin);
+  color: var(--color-text-2);
 }
 
 .profileImg {
   margin-top: 24px;
   width: 72px;
   height: 72px;
+  border-radius: 100%;
 }
 
 .buttonCont {
@@ -45,7 +57,4 @@
 .button--selected {
   border-bottom: 2px var(--color-text-1) solid;
   color: var(--color-text-1);
-}
-
-.postCont {
 }
