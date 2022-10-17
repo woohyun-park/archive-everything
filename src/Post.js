@@ -20,7 +20,7 @@ const tempPost = {
   commentCount: 12,
 };
 
-function Post() {
+function Post({ type = "normal" }) {
   const onProfileClick = () => {
     console.log("onProfileClick");
   };
@@ -45,7 +45,7 @@ function Post() {
   const onCommentTextClick = () => {
     console.log("onLikeTextClick");
   };
-  return (
+  return type === "normal" ? (
     <>
       <div className={styles.post}>
         <div className={styles.firstCont}>
@@ -84,6 +84,10 @@ function Post() {
         <div className={styles.likeWho}>{tempPost.likeDesc}</div>
       </div>
     </>
+  ) : type === "thumbnail" ? (
+    <Carousel type="thumbnail" />
+  ) : (
+    <></>
   );
 }
 

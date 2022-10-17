@@ -36,8 +36,16 @@
   width: 100%;
   text-align: center;
   border-bottom: 1px var(--color-text-3) solid;
+  color: var(--color-text-3);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button--selected {
   border-bottom: 2px var(--color-text-1) solid;
+  color: var(--color-text-1);
+}
+
+.postCont {
 }

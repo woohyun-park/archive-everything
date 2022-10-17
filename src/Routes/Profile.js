@@ -53,6 +53,20 @@ function Profile() {
           </div>
         ))}
       </div>
+      <div className={styles.postCont}>
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+        <Post type="thumbnail" />
+      </div>
     </div>
   );
 }
