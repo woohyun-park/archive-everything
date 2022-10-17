@@ -67,6 +67,12 @@
   }
 }
 
+.title--thumbnail {
+  font-size: var(--size-font-big);
+  padding: var(--margin);
+  font-weight: bold;
+}
+
 .tagCont {
   width: auto;
   padding: var(--margin-carousel);
@@ -76,7 +82,6 @@
   color: var(--color-textCarousel-1);
 }
 
-.title--thumbnail,
 .tagCont--thumbnail {
   padding: var(--margin);
 }
@@ -86,6 +91,11 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.mainTag--thumbnail {
+  font-size: var(--size-font-big);
+  margin-bottom: -2px;
 }
 
 .subTagCont {

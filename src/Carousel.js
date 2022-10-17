@@ -47,7 +47,9 @@ function Carousel({ type = "normal" }) {
             </div>
           </div>
           <div className={cx({ tagCont: true, "tagCont--thumbnail": true })}>
-            <div className={styles.mainTag}>#{tempCarousel.mainTag}</div>
+            <div className={cx({ mainTag: true, "mainTag--thumbnail": true })}>
+              #{tempCarousel.mainTag}
+            </div>
             <div className={styles.subTagCont}>
               <div className={cx({ subTag: true, "subTag--thumbnail": true })}>
                 #{tempCarousel.subTags[0]}
