@@ -9,6 +9,7 @@ import {
   BsChatFill,
   BsBookmarkFill,
 } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const tempPost = {
   profile: "iamdooddi",
@@ -50,16 +51,22 @@ function Post({ type = "normal", data = tempPost }) {
       <div className={styles.post}>
         <div className={styles.firstCont}>
           <div className={styles.profileCont}>
-            <img
-              className={styles.profileImg}
-              src={data.profileImg}
-              alt="profileImg"
-              onClick={onProfileClick}
-            ></img>
+            <Link to="profile">
+              <img
+                className={styles.profileImg}
+                src={data.profileImg}
+                alt="profileImg"
+                onClick={onProfileClick}
+              />
+            </Link>
             <div className={styles.profile}>
-              <div className={styles.profileTxt} onClick={onProfileClick}>
+              <Link
+                to="/profile"
+                className={styles.profileTxt}
+                onClick={onProfileClick}
+              >
                 {data.profile}
-              </div>
+              </Link>
               <div className={styles.date}>{data.date}</div>
             </div>
           </div>

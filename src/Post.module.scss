@@ -29,6 +29,11 @@ svg:hover {
   &:hover {
     cursor: pointer;
   }
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: var(--color-text-1);
+  }
 }
 
 .date {
